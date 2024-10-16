@@ -72,7 +72,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="w-36 absolute top-11 left-[35rem] bg-white py-7 px-12 shadow-md rounded-md text-2xl font-bold">LOGO</div>
+      <div className="w-36 absolute top-11 left-[33rem] bg-white py-7 shadow-md rounded-md text-2xl font-bold text-center">LOGO</div>
 
     </header>
 

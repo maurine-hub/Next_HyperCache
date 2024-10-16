@@ -1,5 +1,7 @@
 // import localFont from "next/font/local";
 import "./globals.css";
+// import {poppins} from '@next/font/google'
+
 // import Header from './components/header'
 
 // const geistSans = localFont({
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+      {/* <Poppins/> */}
       <Header/>
         {children}
       </body>

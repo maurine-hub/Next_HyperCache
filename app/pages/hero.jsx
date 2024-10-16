@@ -1,5 +1,7 @@
 import Header from '../components/header'
 // import Images from '../public/images'
+// import {poppins} from '@next/font/google'
+
 
  function Hero (){
     return (

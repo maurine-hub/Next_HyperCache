@@ -1,6 +1,7 @@
 
 import Hero from './pages/hero'
 import About from './pages/about'
+import Features from './pages/features'
 
 export default function Home() {
   return (
@@ -9,11 +10,8 @@ export default function Home() {
       {/* <h1>Bienvenue sur notre ton site</h1> */}
       {/* Ajoutez ici le contenu de votre page d'accueil */}
       <Hero/>
-      
-      <div className=" w-full h-24">
-      <h1>olop</h1>
-      </div>
       <About/>
+      <Features/>
 
       
 
