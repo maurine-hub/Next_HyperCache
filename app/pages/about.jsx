@@ -1,7 +1,7 @@
 
 import { FaCheckCircle } from "react-icons/fa"
 import Image from "next/image"
-
+import {images} from '../lib/images'
 
 function About (){
     return( 
@@ -16,11 +16,12 @@ function About (){
                 <div className="flex py-14 justify-between">
                     <div className="w-1/2">
                           <Image
-                                src="/images/image3.png" // Chemin relatif à partir de /public
+                                src= {images[0].src} // Chemin relatif à partir de /public
                                 alt=""
                                 width={500}
                                 height={300}
                             />
+                            {/* <img src="https://e7.pngegg.com/pngimages/188/225/png-clipart-gold-iphone-8-and-8-plus-iphone-8-iphone-x-iphone-4-smartphone-t-mobile-iphone-x-mobile-phone-gadget-electronics-thumbnail.png" alt="" /> */}
                     </div>
 
                     <div className="flex flex-col w-1/2 ">
