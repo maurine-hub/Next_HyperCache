@@ -4,6 +4,9 @@ import About from './pages/about'
 import Features from './pages/features'
 import Checkout from './pages/checkout'
 import Learn from './pages/learn'
+import Customers from './pages/customers'
+import Footer from './components/footer.jsx'
+
 
 export default function Home() {
   return (
@@ -16,6 +19,8 @@ export default function Home() {
       <Features/>
       <Checkout/>
       <Learn/>
+      <Customers/>
+      <Footer/>
 
       
 

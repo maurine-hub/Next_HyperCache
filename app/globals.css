@@ -28,3 +28,48 @@ body {
   }
 } */ 
 
+ .swiper-slide {
+  transition: all 0.3s ease;
+}
+
+.swiper-slide-active {
+  transform: scale(1.1);
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #3b82f6; 
+
+}
+/* Positionner les boutons de pagination sous l'image */
+.swiper-pagination {
+  position: absolute; /* Garder le positionnement absolu */
+  bottom: -30px;      /* Ajustez cette valeur pour la distance sous l'image */
+  left: 50%;
+  transform: translateX(-50%); /* Centrer la pagination */
+  z-index: 10;        /* Assurez-vous qu'il soit au-dessus de l'arrière-plan si nécessaire */
+}
+
+    
+.swiper-container {
+  padding-bottom: 40px; /* Ajoutez de l'espace pour que la pagination reste sous l'image */
+}
+
+.shadow{
+  box-shadow: 10px 0px 40px #0003;
+}
