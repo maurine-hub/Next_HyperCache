@@ -65,12 +65,12 @@ import { images } from '../lib/images';
 import Image from 'next/image'; // Si vous utilisez next/image
 
 
-export default function CustomSlider() {
+export default function Customers() {
   return (
-    <div className='flex flex-col justify-center items-center mt-52 mb-20'>
+    <div className='flex flex-col justify-center items-center mt-60 mb-20'>
 
         <div className='flex flex-col w-1/2 items-center pb-10' >
-            <h1 className='uppercase font-semibold pb-6 text-3xl'>our happy customers</h1>
+            <h1 className='uppercase font-bold pb-6 text-3xl text-neutral-800'>our happy customers</h1>
             <p className="font-meduim text-neutral-500 text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae inventore dolorum quia fugiat, debitis aliquam assumenda pariatur voluptatem facilis maxime laudantium perferendis exercitationem id cum laboriosam, in facere. Quae, voluptates?</p>
         </div>
 

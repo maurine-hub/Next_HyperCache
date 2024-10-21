@@ -4,7 +4,7 @@ const Learn = () =>{
         <div>
             <div className="  bg-[#cc1616] flex flex-col items-center p-16 text-white h-auto">
                 <div className="flex flex-col text-center w-1/2 pb-28">
-                    <h1 className="uppercase font-semibold pb-6 text-3xl">how use the app perfectly</h1>
+                    <h1 className="uppercase font-bold pb-6 text-3xl">how use the app perfectly</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatibus maiores iusto, nisi aliquam quia error eligendi quasi, repellat reiciendis modi? Quo, odit ducimus amet illo sint ratione incidunt maiores.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis corrupti ab ipsa veritatis libero.
                     </p>

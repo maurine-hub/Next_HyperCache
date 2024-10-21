@@ -14,13 +14,13 @@
 
 //   return (
 //     <div>
-//       <div className="flex flex-col items-center p-16 mx-32">
-//             <div className="flex flex-col text-center w-1/2">
-//                 <h1 className="uppercase font-semibold pb-6 text-3xl">Checkout our app interface look</h1>
-//                 <p className="font-meduim text-neutral-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis autem soluta dicta culpa hic illum sint accusamus doloremque! Tenetur voluptates dolorem illo perspiciatis perferendis, quos corporis in ab consequuntur ducimus?</p>
-//             </div>
+      // <div className="flex flex-col items-center p-16 mx-32">
+      //       <div className="flex flex-col text-center w-1/2">
+      //           <h1 className="uppercase font-semibold pb-6 text-3xl">Checkout our app interface look</h1>
+      //           <p className="font-meduim text-neutral-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis autem soluta dicta culpa hic illum sint accusamus doloremque! Tenetur voluptates dolorem illo perspiciatis perferendis, quos corporis in ab consequuntur ducimus?</p>
+      //       </div>
 
-//       </div>
+      // </div>
 //       <div className="w-64 max-w-3xl mx-auto">
 //         <Swiper
 //           modules={[Navigation, Pagination]} // Active les modules nécessaires
@@ -261,6 +261,8 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import { images } from '../lib/images';
 
+import { FaDownload, FaStar, FaGoodreads } from 'react-icons/fa';
+
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
@@ -268,38 +270,99 @@ import 'swiper/css/navigation';
 
 export default function App() {
   return (
-    <div className="relative w-full h-[500px]">
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={3}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 1.5,
-          slideShadows: false,
-        }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="w-[75%] h-full mySwiper"
-      >
-        {images.map((image, index) => (
-          <SwiperSlide key={index} className="swiper-slide">
-            <div className="relative w-full h-full">
-              <Image 
-                src={image.src}
-                alt={`Nature ${index + 1}`}
-                width={500}
+    <div className="flex flex-col items-center p-20 ">
+      
+      <div className="flex flex-col text-center w-1/2">
+          <h1 className="uppercase font-bold pb-6 text-3xl text-neutral-700">Checkout our app interface look</h1>
+          <p className="font-meduim text-neutral-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis autem soluta dicta culpa hic illum sint accusamus doloremque! Tenetur voluptates dolorem illo perspiciatis perferendis, quos corporis in ab consequuntur ducimus?</p>
+      </div>
+
+
+      <div className="relative w-full h-[500px] mt-20">
+        <Swiper
+          effect={'coverflow'}
+          grabCursor={true}
+          centeredSlides={true}
+          slidesPerView={3}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1.5,
+            slideShadows: false,
+          }}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="w-[90%] h-full mySwiper"
+        >
+          {images.map((image, index) => (
+            <SwiperSlide key={index} className="swiper-slide">
+              <div className="relative w-full h-full">
+                <Image 
+                  src={image.src}
+                  alt={`Nature ${index + 1}`}
+                  width={500}
+                  height={300}
+                  className="transition-all duration-300"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      <div className='flex pt-8 w-full '>
+          <div className='flex flex-col w-1/2'>
+            <h1 className='uppercase font-bold text-3xl text-neutral-700'>download app now</h1>
+            <p className='text-lg font-meduim text-neutral-500 py-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde adipisci eligendi soluta tenetur quia fugit iste minus nihil laborum quas rem voluptates eaque alias, ducimus, suscipit autem blanditiis quasi.</p>
+            <div className='flex'>
+              <Image
+                src={images[5].src}
+                alt=''
+                width={150}
                 height={300}
-                className="transition-all duration-300"
+              />
+              <Image
+                src={images[4].src}
+                alt=''
+                width={150}
+                height={300}
               />
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+
+            
+          <div className='flex pt-8 justify-between w-[80%]'>
+            <div className='flex flex-col bg-[#cc1616] text-white p-6 rounded-md shadow-md items-center'>
+              <FaDownload className='text-3xl'/>
+              <p className='text-xl py-2 '> 4598743</p>
+              <p className='font-mediim uppercase text-xl'>download</p>
+            </div>
+            <div className='flex flex-col bg-[#cc1616] text-white p-6 rounded-md shadow-md items-center'>
+              <FaDownload className='text-3xl'/>
+              <p className='text-xl py-2 '> 4598743</p>
+              <p className='font-mediim uppercase text-xl'>download</p>
+            </div>
+            <div className='flex flex-col bg-[#cc1616] text-white p-6 rounded-md shadow-md items-center'>
+              <FaDownload className='text-3xl'/>
+              <p className='text-xl py-2 '> 4598743</p>
+              <p className='font-mediim uppercase text-xl'>download</p>
+            </div>
+
+          </div>
+          </div>
+
+          <div className='w-[40%] ml-28'>
+            <Image
+              src={images[3].src}
+              alt=''
+              width={400}
+              height={300}
+            />
+          </div>
+
+      </div>
     </div>
+    
   );
 }

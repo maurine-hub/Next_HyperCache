@@ -6,9 +6,9 @@ import {images} from '../lib/images'
 function About (){
     return( 
         <>
-            <div className="flex flex-col items-center mx-32 py-16">
+            <div className="flex flex-col items-center mx-32 py-16" id="about">
                 <div className="flex flex-col text-center w-1/2">
-                    <h1 className="font-semibold pb-6 text-3xl">ABOUT OUR APP</h1>
+                    <h1 className="font-bold pb-6 text-3xl text-neutral-800">ABOUT OUR APP</h1>
                     <p className="font-meduim text-neutral-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, modi eveniet esse iure placeat amet asperiores ducimus harum soluta praesentium alias atque velit laudantium quis nemo earum voluptas possimus enim.</p>
 
                 </div>
@@ -30,7 +30,7 @@ function About (){
                                 <FaCheckCircle className="text-[#cc1616]"/>
                                 <h3 className="uppercase pl-3 font-semibold">creative design</h3>
                             </div>
-                            <p className="text-base font-light text-neutral-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim. Labore cum excepturi praesentium mollitia, magnam voluptatum vero culpa suscipit cumque nostrum in rerum enim eum veniam iusto rem eos!</p>
+                            <p className="text-base  text-neutral-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim. Labore cum excepturi praesentium mollitia, magnam voluptatum vero culpa suscipit cumque nostrum in rerum enim eum veniam iusto rem eos!</p>
                         </div>
 
                         <div className="shadow-md p-3 rounded-md mb-6">
@@ -38,7 +38,7 @@ function About (){
                                 <FaCheckCircle className="text-[#cc1616]"/>
                                 <h3 className="uppercase pl-3 font-semibold">creative design</h3>
                             </div>
-                            <p className="text-base font-light text-neutral-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim. Labore cum excepturi praesentium mollitia, magnam voluptatum vero culpa suscipit cumque nostrum in rerum enim eum veniam iusto rem eos!</p>
+                            <p className="text-base  text-neutral-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim. Labore cum excepturi praesentium mollitia, magnam voluptatum vero culpa suscipit cumque nostrum in rerum enim eum veniam iusto rem eos!</p>
                         </div>
 
                         <div className="shadow-md p-3 rounded-md mb-6">
@@ -46,7 +46,7 @@ function About (){
                                 <FaCheckCircle className="text-[#cc1616]"/>
                                 <h3 className="uppercase pl-3 font-semibold">creative design</h3>
                             </div>
-                            <p className="text-base font-light text-neutral-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim. Labore cum excepturi praesentium mollitia, magnam voluptatum vero culpa suscipit cumque nostrum in rerum enim eum veniam iusto rem eos!</p>
+                            <p className="text-base  text-neutral-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim. Labore cum excepturi praesentium mollitia, magnam voluptatum vero culpa suscipit cumque nostrum in rerum enim eum veniam iusto rem eos!</p>
                         </div>
 
                     </div>

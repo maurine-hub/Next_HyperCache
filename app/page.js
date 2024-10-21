@@ -11,7 +11,7 @@ import Footer from './components/footer.jsx'
 export default function Home() {
   return (
   
-    <div>
+    <div id='home'>
       {/* <h1>Bienvenue sur notre ton site</h1> */}
       {/* Ajoutez ici le contenu de votre page d'accueil */}
       <Hero/>

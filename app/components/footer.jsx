@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhone } from "react-icons/fa";
 const Footer = ()=>{
     return(
         <>
-            <div className="relative w-full bg-[#6c1010] mt-60">
+            <div className="relative w-full bg-[#6c1010] mt-64">
 
                 <div className="shadow flex absolute w-[90%] bottom-[85%] bg-white rounded-3xl mx-16 p-14 justify-between  ">
                     <div className="flex items-center">
